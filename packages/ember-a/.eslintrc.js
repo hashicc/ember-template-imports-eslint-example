@@ -24,6 +24,16 @@ module.exports = {
   },
   rules: {},
   overrides: [
+    {
+      files: ['**/*.gjs'],
+      parser: 'ember-eslint-parser',
+      plugins: ['ember'],
+      extends: [
+        'eslint:recommended',
+        'plugin:ember/recommended',
+        'plugin:ember/recommended-gjs',
+      ],
+    },
     // node files
     {
       files: [
