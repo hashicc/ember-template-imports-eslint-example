@@ -98,8 +98,8 @@ importers:
         specifier: ^4.3.0
         version: 4.3.0
       ember-template-lint:
-        specifier: ^6.0.0
-        version: 6.1.0
+        specifier: ^7.9.1
+        version: 7.9.1
       ember-welcome-page:
         specifier: ^7.0.2
         version: 7.0.2
@@ -110,7 +110,7 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.1)
       eslint-plugin-ember:
-        specifier: ^12.2.1
+        specifier: ^12.5.0
         version: 12.5.0(@babel/core@7.27.4)(eslint@8.57.1)
       eslint-plugin-n:
         specifier: ^16.6.2
@@ -2696,6 +2696,11 @@ packages:
 
   ember-template-lint@6.1.0:
     resolution: {integrity: sha512-UyzLPcyneG3mnbBfewyYIlV7fy6JKHQVAJy5a9+URdJKkZKN+3vQkQzIIlsz6dP/GpoXVB+datns5HlfMfliSA==}
+    engines: {node: ^18.18.0 || >= 20.9.0}
+    hasBin: true
+
+  ember-template-lint@7.9.1:
+    resolution: {integrity: sha512-uh5WU2sJKkQgDgIQovwv1D0fw2/RJnmyAHqIhaTYk68CfKQ/O5v31c1iXNu71qv3xeONi3QPl/rBW0EMdIFXWA==}
     engines: {node: ^18.18.0 || >= 20.9.0}
     hasBin: true
 
@@ -9487,6 +9492,11 @@ snapshots:
       yargs: 17.7.2
     transitivePeerDependencies:
       - supports-color
+
+  ember-template-lint@7.9.1:
+    dependencies:
+      '@lint-todo/utils': 13.1.1
+      content-tag: 3.1.3
 
   ember-template-recast@6.1.5:
     dependencies:
